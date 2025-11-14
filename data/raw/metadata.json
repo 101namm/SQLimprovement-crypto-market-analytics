@@ -1,0 +1,13 @@
+{
+  "collection_date": "2025-11-14T18:50:59.402273",
+  "cryptos_count": 4,
+  "days_of_history": 90,
+  "data_points": 273,
+  "cryptos": [
+    "bitcoin",
+    "ethereum",
+    "binancecoin",
+    "algorand",
+    "cosmos"
+  ]
+}

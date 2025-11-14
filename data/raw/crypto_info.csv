@@ -1,0 +1,5 @@
+id,symbol,name,market_cap_rank,current_price,market_cap,total_volume
+bitcoin,BTC,Bitcoin,1,96051.0,1920045161271,126034138381
+ethereum,ETH,Ethereum,2,3187.31,386858944231,51740920830
+binancecoin,BNB,BNB,5,923.51,127385337448,3313394348
+algorand,ALGO,Algorand,77,0.1633,1437170871,102512875

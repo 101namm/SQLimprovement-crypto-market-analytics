@@ -146,7 +146,7 @@ MIT License
 
 **Ton Nom**
 - GitHub: [101namm](https://github.com/101namm)
-- LinkedIn: [Ton profil](https://linkedin.com/in/ton-profil)
+- LinkedIn: [Mon profil](https://fr.linkedin.com/in/louischavaroche)
 
 ---
 
