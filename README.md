@@ -144,7 +144,7 @@ MIT License
 
 ## 👤 Auteur
 
-**Ton Nom**
+**101namm**
 - GitHub: [101namm](https://github.com/101namm)
 - LinkedIn: [Mon profil](https://fr.linkedin.com/in/louischavaroche)
 
