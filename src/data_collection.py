@@ -121,7 +121,7 @@ def collect_all_data():
     Collecte toutes les données pour les cryptos configurées
     """
     print("\n" + "="*60)
-    print("🚀 DÉBUT DE LA COLLECTE DE DONNÉES CRYPTO")
+    print(" DÉBUT DE LA COLLECTE DE DONNÉES CRYPTO")
     print("="*60 + "\n")
     
     create_directories()
@@ -185,7 +185,7 @@ def collect_all_data():
     print(f"✓ Métadonnées sauvegardées: {metadata_path}")
     
     print("\n" + "="*60)
-    print("✅ COLLECTE TERMINÉE AVEC SUCCÈS!")
+    print(" COLLECTE TERMINÉE AVEC SUCCÈS!")
     print("="*60 + "\n")
     
     return df_info, df_historical
@@ -197,7 +197,7 @@ def main():
         df_info, df_historical = collect_all_data()
         
         # Affichage d'un aperçu
-        print("\n📊 APERÇU DES DONNÉES COLLECTÉES\n")
+        print("\n APERÇU DES DONNÉES COLLECTÉES\n")
         
         print("Top 5 cryptos par market cap:")
         print(df_info.nlargest(5, "market_cap")[["name", "symbol", "current_price", "market_cap"]])
@@ -207,11 +207,11 @@ def main():
         print(df_historical.tail(10))
         
         print("\n" + "="*60)
-        print("✨ Prochaine étape: python src/database.py")
+        print(" Prochaine étape: python src/database.py")
         print("="*60 + "\n")
         
     except Exception as e:
-        print(f"\n❌ ERREUR: {e}")
+        print(f"\n ERREUR: {e}")
         raise
 
 
