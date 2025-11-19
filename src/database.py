@@ -18,7 +18,7 @@ RAW_DATA_DIR = "data/raw"
 def create_database():
     """Crée la base de données et exécute le schéma SQL"""
     print("\n" + "="*60)
-    print("🗄️  CRÉATION DE LA BASE DE DONNÉES")
+    print("  CRÉATION DE LA BASE DE DONNÉES")
     print("="*60 + "\n")
     
     # Suppression de l'ancienne base si elle existe
@@ -46,7 +46,7 @@ def create_database():
 def import_cryptocurrencies(conn):
     """Importe les données des cryptomonnaies"""
     print("\n" + "-"*60)
-    print("📥 IMPORT DES CRYPTOMONNAIES")
+    print(" IMPORT DES CRYPTOMONNAIES")
     print("-"*60 + "\n")
     
     # Lecture du CSV
@@ -69,7 +69,7 @@ def import_cryptocurrencies(conn):
 def import_price_history(conn):
     """Importe l'historique des prix"""
     print("\n" + "-"*60)
-    print("📥 IMPORT DE L'HISTORIQUE DES PRIX")
+    print(" IMPORT DE L'HISTORIQUE DES PRIX")
     print("-"*60 + "\n")
     
     # Lecture du CSV
@@ -83,7 +83,7 @@ def import_price_history(conn):
     # Conversion des types
     df_insert["date"] = pd.to_datetime(df_insert["date"]).dt.date
     
-    # ✨ NOUVEAU : Suppression des doublons (garde la dernière valeur)
+    #Suppression des doublons (garde la dernière valeur)
     df_insert = df_insert.drop_duplicates(subset=["crypto_id", "date"], keep="last")
     
     print(f"  Lignes après nettoyage des doublons: {len(df_insert)}")
@@ -99,7 +99,7 @@ def import_price_history(conn):
 def calculate_metrics(conn):
     """Calcule et importe les métriques (rendements, volatilité)"""
     print("\n" + "-"*60)
-    print("📊 CALCUL DES MÉTRIQUES")
+    print(" CALCUL DES MÉTRIQUES")
     print("-"*60 + "\n")
     
     # Lecture des prix depuis la base
@@ -157,7 +157,7 @@ def calculate_metrics(conn):
 def verify_data(conn):
     """Vérifie l'intégrité des données importées"""
     print("\n" + "-"*60)
-    print("🔍 VÉRIFICATION DES DONNÉES")
+    print(" VÉRIFICATION DES DONNÉES")
     print("-"*60 + "\n")
     
     cursor = conn.cursor()
@@ -194,7 +194,7 @@ def verify_data(conn):
 def run_sample_queries(conn):
     """Exécute quelques requêtes d'exemple pour vérifier que tout fonctionne"""
     print("\n" + "-"*60)
-    print("🔬 TEST DES REQUÊTES SQL")
+    print(" TEST DES REQUÊTES SQL")
     print("-"*60 + "\n")
     
     # Requête 1: Top 5 cryptos par market cap
@@ -250,14 +250,14 @@ def main():
         conn.close()
         
         print("\n" + "="*60)
-        print("✅ BASE DE DONNÉES CRÉÉE ET PEUPLÉE AVEC SUCCÈS!")
+        print(" BASE DE DONNÉES CRÉÉE ET PEUPLÉE AVEC SUCCÈS!")
         print("="*60)
-        print(f"\n📍 Emplacement: {DB_PATH}")
-        print("\n✨ Prochaine étape: python src/analysis.py")
+        print(f"\n Emplacement: {DB_PATH}")
+        print("\n Prochaine étape: python src/analysis.py")
         print("   ou explore avec: sqlite3 data/crypto_market.db\n")
         
     except Exception as e:
-        print(f"\n❌ ERREUR: {e}")
+        print(f"\n ERREUR: {e}")
         raise
 
 
