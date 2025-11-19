@@ -44,7 +44,7 @@ def execute_query(conn, query_name, query):
         pd.DataFrame: Résultat de la requête
     """
     print(f"\n{'='*60}")
-    print(f"📊 {query_name}")
+    print(f" {query_name}")
     print('='*60)
     
     df = pd.read_sql_query(query, conn)
@@ -55,7 +55,7 @@ def execute_query(conn, query_name, query):
 
 def plot_price_evolution(conn):
     """Graphique de l'évolution des prix (normalisé à 100 pour comparaison)"""
-    print("\n\n🎨 Génération: Évolution des prix...")
+    print("\n\n Génération: Évolution des prix...")
     
     # Récupère TOUTES les cryptos disponibles dynamiquement
     query = """
@@ -103,7 +103,7 @@ def plot_price_evolution(conn):
 
 def plot_volatility_comparison(conn):
     """Comparaison des volatilités"""
-    print("\n🎨 Génération: Comparaison des volatilités...")
+    print("\n Génération: Comparaison des volatilités...")
     
     query = """
     SELECT 
@@ -147,7 +147,7 @@ def plot_volatility_comparison(conn):
 
 def plot_correlation_heatmap(conn):
     """Heatmap des corrélations entre cryptos"""
-    print("\n🎨 Génération: Heatmap de corrélations...")
+    print("\n Génération: Heatmap de corrélations...")
     
     query = """
     SELECT 
@@ -201,7 +201,7 @@ def plot_correlation_heatmap(conn):
 
 def plot_market_dominance(conn):
     """Camembert de la dominance du marché"""
-    print("\n🎨 Génération: Market dominance...")
+    print("\n Génération: Market dominance...")
     
     query = """
     WITH latest_marketcap AS (
@@ -271,7 +271,7 @@ def plot_market_dominance(conn):
 
 def plot_performance_comparison(conn):
     """Comparaison des performances sur 30 jours"""
-    print("\n🎨 Génération: Comparaison des performances...")
+    print("\n Génération: Comparaison des performances...")
     
     query = """
     SELECT 
@@ -329,7 +329,7 @@ def plot_performance_comparison(conn):
 
 def plot_volume_analysis(conn):
     """Analyse des volumes de trading - toutes les cryptos disponibles"""
-    print("\n🎨 Génération: Analyse des volumes...")
+    print("\n Génération: Analyse des volumes...")
     
     # Récupère TOUTES les cryptos disponibles
     query = """
@@ -405,7 +405,7 @@ def plot_volume_analysis(conn):
 def run_all_analyses():
     """Exécute toutes les analyses et génère tous les graphiques"""
     print("\n" + "="*60)
-    print("🚀 DÉBUT DES ANALYSES SQL ET VISUALISATIONS")
+    print(" DÉBUT DES ANALYSES SQL ET VISUALISATIONS")
     print("="*60 + "\n")
     
     create_viz_directory()
@@ -471,7 +471,7 @@ def run_all_analyses():
     
     # Génération des visualisations
     print("\n\n" + "="*60)
-    print("📈 GÉNÉRATION DES VISUALISATIONS")
+    print(" GÉNÉRATION DES VISUALISATIONS")
     print("="*60)
     
     plot_price_evolution(conn)
@@ -484,14 +484,14 @@ def run_all_analyses():
     conn.close()
     
     print("\n" + "="*60)
-    print("✅ ANALYSES TERMINÉES!")
+    print(" ANALYSES TERMINÉES!")
     print("="*60)
-    print(f"\n📊 {len(os.listdir(VIZ_DIR))} visualisations générées dans: {VIZ_DIR}/")
-    print("\n💡 Tu peux maintenant:")
+    print(f"\n {len(os.listdir(VIZ_DIR))} visualisations générées dans: {VIZ_DIR}/")
+    print("\n Tu peux maintenant:")
     print("   1. Consulter les graphiques dans le dossier visualizations/")
     print("   2. Explorer la base avec: sqlite3 data/crypto_market.db")
     print("   3. Tester tes propres requêtes SQL depuis sql/queries.sql")
-    print("   4. Publier le projet sur GitHub! 🚀\n")
+    print("   4. Publier le projet sur GitHub! \n")
 
 
 def main():
@@ -499,7 +499,7 @@ def main():
     try:
         run_all_analyses()
     except Exception as e:
-        print(f"\n❌ ERREUR: {e}")
+        print(f"\n ERREUR: {e}")
         raise
 
 
