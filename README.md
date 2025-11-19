@@ -1,4 +1,4 @@
-# SQLimprovement - Crypto Market Analytics 📊🚀
+# SQLimprovement - Crypto Market Analytics 📊🚀 (Projet fun)
 
 ## 🎯 Objectif du projet
 
@@ -101,14 +101,6 @@ Exécute les requêtes SQL et génère les visualisations.
 - Distribution des rendements
 - Comparaison de volatilités
 - Évolution des market caps
-
-## 📈 Insights clés
-
-*(À remplir après avoir lancé les analyses)*
-
-- Insight 1 : ...
-- Insight 2 : ...
-- Insight 3 : ...
 
 ## 🛠️ Technologies utilisées
 
