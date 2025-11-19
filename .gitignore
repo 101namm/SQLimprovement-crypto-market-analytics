@@ -1,0 +1,53 @@
+# --- Python & Environnement Virtuel ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Jupyter Notebooks (Analyse de données) ---
+# Ignore les sauvegardes automatiques de notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+# Optionnel : ignorer les outputs des notebooks si tu ne veux versionner que le code
+# *.nbconvert.ipynb
+
+# --- Configuration & Sécurité (TRÈS IMPORTANT) ---
+# Ignore les fichiers contenant tes clés API (CoinGecko, Binance, etc.) et mots de passe SQL
+.env
+.env.local
+.env.*
+config.py
+secrets.py
+database.ini
+
+# --- Fichiers de Données (Crypto Market Analytics) ---
+# Ignore les gros datasets téléchargés pour éviter de saturer le repo
+*.csv
+*.xlsx
+*.json
+*.parquet
+*.pkl
+data/
+exports/
+
+# --- Bases de données locales (SQL) ---
+# Ignore les fichiers DB locaux (SQLite) souvent utilisés en dev
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# --- Logs & Rapports ---
+*.log
+*.sql.log
+
+# --- IDE & OS (Fichiers systèmes inutiles) ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
