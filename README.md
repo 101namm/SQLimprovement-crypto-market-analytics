@@ -30,8 +30,6 @@ SQLimprovement-crypto-market-analytics/
 │   ├── data_collection.py            # Script de collecte API
 │   ├── database.py                   # Gestion de la base de données
 │   └── analysis.py                   # Analyses et visualisations
-├── notebooks/
-│   └── exploratory_analysis.ipynb    # Analyses exploratoires
 └── visualizations/                    # Graphiques générés
 ```
 
