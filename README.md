@@ -1,10 +1,10 @@
-# SQLimprovement - Crypto Market Analytics 📊🚀 (Projet fun)
+# SQLimprovement - Crypto Market Analytics
 
-## 🎯 Objectif du projet
+## Objectif du projet
 
 Projet d'analyse de données du marché des cryptomonnaies utilisant SQL pour explorer, analyser et extraire des insights business sur les performances, volatilités et corrélations des principales cryptomonnaies.
 
-## 📋 Description
+## Description
 
 Ce projet démontre mes compétences en :
 - **Data Engineering** : Collecte de données via API (CoinGecko)
@@ -12,7 +12,7 @@ Ce projet démontre mes compétences en :
 - **Data Analysis** : Analyse de séries temporelles, calculs de métriques financières
 - **Visualisation** : Graphiques et dashboards pour insights business
 
-## 🗂️ Structure du projet
+## Structure du projet
 
 ```
 SQLimprovement-crypto-market-analytics/
@@ -35,7 +35,7 @@ SQLimprovement-crypto-market-analytics/
 └── visualizations/                    # Graphiques générés
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Prérequis
 - Python 3.8+
@@ -56,7 +56,7 @@ source venv/bin/activate  # Sur Linux/Mac
 pip install -r requirements.txt
 ```
 
-## 📊 Utilisation
+## Utilisation
 
 ### 1. Collecter les données
 
@@ -82,7 +82,7 @@ python src/analysis.py
 
 Exécute les requêtes SQL et génère les visualisations.
 
-## 🔍 Analyses réalisées
+## Analyses réalisées
 
 ### Requêtes SQL Business
 
@@ -102,7 +102,7 @@ Exécute les requêtes SQL et génère les visualisations.
 - Comparaison de volatilités
 - Évolution des market caps
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 - **Python 3.x** : Langage principal
 - **SQLite** : Base de données relationnelle
@@ -111,17 +111,17 @@ Exécute les requêtes SQL et génère les visualisations.
 - **Matplotlib/Seaborn** : Visualisations
 - **NumPy** : Calculs numériques
 
-## 📚 Compétences démontrées
+## Compétences démontrées
 
-✅ Collecte de données via API REST  
-✅ Modélisation de base de données relationnelle  
-✅ Requêtes SQL complexes (agrégations, jointures, window functions)  
-✅ Analyse de séries temporelles financières  
-✅ Calculs de métriques financières (volatilité, corrélation, rendement)  
-✅ Data visualization  
-✅ Documentation et code propre  
+Collecte de données via API REST  
+Modélisation de base de données relationnelle  
+Requêtes SQL complexes (agrégations, jointures, window functions)  
+Analyse de séries temporelles financières  
+Calculs de métriques financières (volatilité, corrélation, rendement)  
+Data visualization  
+Documentation et code propre  
 
-## 🔄 Améliorations futures
+## Améliorations futures
 
 - [ ] Ajouter plus de cryptomonnaies (top 50)
 - [ ] Intégrer des données de sentiment (Twitter/Reddit)
@@ -130,11 +130,11 @@ Exécute les requêtes SQL et génère les visualisations.
 - [ ] Ajouter des indicateurs techniques (RSI, MACD, Bollinger Bands)
 - [ ] Analyse prédictive avec Machine Learning
 
-## 📝 Licence
+## Licence
 
 MIT License
 
-## 👤 Auteur
+## Auteur
 
 **101namm**
 - GitHub: [101namm](https://github.com/101namm)
